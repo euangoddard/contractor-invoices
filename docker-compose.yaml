@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  cli:
+    build: .
+    volumes:
+      - .:/opt/ci
+    env_file:
+      - docker.env
