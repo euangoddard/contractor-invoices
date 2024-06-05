@@ -43,7 +43,23 @@ The _Employee Id_ column value should match that of the `rates.csv` file.
 
 This file can contain multiple rows for each employee if they have taken more than one holiday in the period.
 
-Not every employee that appears in `rates.csv` needs to be represented in `holidays.csv`
+Not every employee that appears in `rates.csv` needs to be rep esented in `holidays.csv`
+
+### days.csv
+
+This file needs 2 columns (data type in _italics_):
+
+- Employee Id _string_
+- Mon _boolean_
+- Tue _boolean_
+- Wed _boolean_
+- Thu _boolean_
+- Fri _boolean_
+
+The days must be either `TRUE` or `FALSE` so that DuckDB can parse it as a boolean.
+
+Not every employee that appears in `rates.csv` needs to be rep esented in `days.csv`.
+If an employee is omitted from here, it is assumed that they work Monday to Friday.
 
 ## Running the CLI command
 
