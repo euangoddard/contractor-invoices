@@ -2,3 +2,4 @@ docker.env
 .vscode
 data/*.csv
 *.pyc
+.DS_Store
